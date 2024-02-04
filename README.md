@@ -19,7 +19,7 @@ git clone https://github.com/Saxyamdh/Static-Recipe-Website-.git
 The project structure is as follows:
 
 - **css/:** Contains stylesheets for the website.
-- **html/:** Holds HTML files for different pages or components.
+- **html/:** Holds HTML files for the  page.
 - **images/:** Stores images used in the website.
 - **index.js:** Main JavaScript file for handling dynamic functionality.
 - **README.md:** This file, providing information about the project.
