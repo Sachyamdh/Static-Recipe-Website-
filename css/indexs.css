@@ -1,0 +1,307 @@
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body{
+    margin: 0;
+}
+header{
+    margin: 0;
+}
+
+.header{
+    background-color:#fae8d4 ;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 12%;
+}
+.header h1,img,iconify-icon{
+    cursor: pointer;
+}
+#logo{
+    max-height: 90%;
+    cursor: pointer;
+    padding-left: 10%;
+}
+.header-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: rgb(37, 37, 37);
+}
+.header-right{
+    display: flex;
+    width:15%;
+    justify-content: center;
+}
+.header-right a{
+    color: black;
+    text-decoration: none;
+}
+iconify-icon{
+    width: 20%;
+}
+.first{
+    position: relative;
+    height: 80%;
+    background: linear-gradient(0deg, rgba(248, 196, 196, 0.8) 0%, rgba(248, 196, 196, 0.8) 100%), url("../images/index1.jpg") 80% ;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70%;
+    justify-content: center;
+    align-items: left;
+    padding-left: 10%;
+
+}
+.content h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 600;
+    width: 70%;
+}
+.content p{
+    font-family: 'Lato', sans-serif;
+    max-width: 80%;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+.content button{
+    width: 17%;
+    height: 3.5rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    background-color: #cf2424;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+.content button:hover{
+    transition:  ease-in-out 0.3s;
+    background-color: #f10606;
+    font-size: 1.2rem ;
+    transform: scale(1.1);
+    border: none;
+}
+.second{
+    position: relative;
+    height: 60vh;
+    background: linear-gradient(0deg, rgba(248, 196, 196, 0.8) 10%, rgba(250, 232, 212, 0.8) 100%);
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.content2 {
+    height: 80%;
+    width: 35%;
+    
+}
+
+.card {
+    border-radius: 30px;
+    object-fit: cover; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fade 0.5s ease-in-out;
+}
+
+#recipeImage {
+    border-radius: 30px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.third,.fourth{
+    width: 100%;
+    background-color: rgba(250, 232, 212, 0.8);
+    height:60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Playfair Display', serif;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: scroll;
+    justify-content: center;
+    height: 90%;
+    padding-left:40px;
+  }
+  .cards{
+    /* min-width: 20%; */
+    width: 20%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5%;
+    background-color: whitesmoke;
+    border-radius: 10px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+.cards h2{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.cards img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: unset;
+    transition: opacity 0.5s ease;
+}
+.cards:hover{
+    /* background: rgba(31, 30, 30, 0.8);  */
+    background-color: rgba(248, 196, 196, 0.2) ;
+    color: black;
+    z-index: 10px;
+}
+.cards-content{
+    position:absolute;
+    opacity: 0; 
+    animation: 1.5s linear fade; 
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    align-items: right;
+    transition: 1s ease;
+    padding: 20px;
+}
+.cards:hover .cards-content {
+    opacity: 1; 
+    animation: fade 1s ease-in-out; 
+    align-items: right;
+}
+
+.cards:hover h2{
+    display: none;
+    transition: opacity 0.3s ease;
+}
+.cards:hover img{
+    height: 100%;
+    z-index: -1;
+    zoom: 1.1;
+    transition: 1s ease;
+}
+.cards-content h3{
+    margin: 0;
+}
+
+  
+.footer{
+    background-color:rgba(248, 196, 196, 0.8) ;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 22%;
+}
+.topPicksdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:30%;
+    align-items: center;
+}
+.topPicksdiv button{
+    height: 40%;
+    width: 10%;
+    align-items: center;
+    justify-items: center;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(248, 196, 196, 0.8);
+    transition: ease-in-out 0.5s;
+    color: black;
+}
+.topPicksdiv button:hover{
+    transform: scale(1.4);
+    background-color: rgba(202, 164, 164, 0.8);
+    transition: ease-in-out 0.5s;
+}
+.fourth{
+    background-color: rgba(221, 205, 187, 0.8);
+    height: 95%;
+}
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+}
+.fourth h1{
+    margin: 0;
+}
+.center h2 {
+    color: black;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    position: relative; 
+    cursor: pointer; 
+    transition: color 0.5s; 
+    font: 1.6rem ;
+    margin: 0;
+  }
+    
+.center h2::after {
+    content: ""; 
+    position: absolute;
+    bottom: -10px; 
+    left: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: black;
+    transition: width 0.5s; 
+  }
+.center h2:hover::after {
+    width: 100%; 
+  }
+.containerfour{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    height: 89%;
+    justify-content: space-around;
+}
+.containerfour .cards{
+    height: 45%;
+}
