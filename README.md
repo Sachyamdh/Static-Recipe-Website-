@@ -1,6 +1,6 @@
 # Static Recipe Website
 
-Welcome to the Static Recipe Website! This website is designed to showcase various recipes along with their ingredients. The information is fetched from a JSON API.
+Welcome to the Static Recipe Website! This website is designed to showcase various recipes along with their ingredients. The information is fetched from a remote JSON API.
 
 ## Features
 
